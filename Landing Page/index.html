@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftSync – All Your Productivity, Perfectly Synced</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2907/2907243.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/2907/2907243.png" alt="SwiftSync logo" width="32" height="32" />
+      SwiftSync
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="navbar-link">Home</a>
+      <a href="#features" class="navbar-link">Features</a>
+      <a href="#testimonials" class="navbar-link">Testimonials</a>
+      <a href="#pricing" class="navbar-link">Pricing</a>
+      <a href="#cta" class="navbar-link">Get Started</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+      <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="navbar-link">Home</a>
+      <a href="#features" class="navbar-link">Features</a>
+      <a href="#testimonials" class="navbar-link">Testimonials</a>
+      <a href="#pricing" class="navbar-link">Pricing</a>
+      <a href="#cta" class="navbar-link">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">All your productivity, perfectly synced.</h1>
+        <p class="hero-desc">
+          SwiftSync brings together your tasks, calendar events, and notes from all platforms—powered by AI. Stay
+          organized and collaborate with real-time sync.
+        </p>
+        <button class="hero-cta">Get Started Free</button>
+        <div class="hero-trust">Trusted by 50,000+ productive teams</div>
+      </div>
+      <div class="hero-image">
+        <picture>
+          <img
+            src="https://cdn.dribbble.com/userupload/26290702/file/original-5c7da0eca352fe569b52881c810740d5.png?resize=752x&vertical=center"
+            alt="SwiftSync productivity dashboard mockup" loading="lazy" class="hero-img">
+        </picture>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2 class="features-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🗓️</span>
+          <div class="feature-title">Unified Calendar & Tasks</div>
+          <div class="feature-desc">See all your events and to-dos in one place, synced from Google, Outlook, and more.
+          </div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🤖</span>
+          <div class="feature-title">AI Smart Suggestions</div>
+          <div class="feature-desc">Get actionable recommendations, reminders, and schedule optimizations tailored to
+            you.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔒</span>
+          <div class="feature-title">Secure Cloud Sync</div>
+          <div class="feature-desc">Your data is encrypted and backed up — always accessible, always secure.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🫱🏻‍🫲🏽</span>
+          <div class="feature-title">Real-Time Collaboration</div>
+          <div class="feature-desc">Work together on tasks and projects with team chat and shared boards.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🛠️</span>
+          <div class="feature-title">Customizable Widgets</div>
+          <div class="feature-desc">Personalize your dashboard with drag-and-drop widgets for your workflow.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <div class="feature-title">Cross-Platform Apps</div>
+          <div class="feature-desc">Access SwiftSync on iOS, Android, Windows, and MacOS for seamless productivity
+            anywhere.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">💡</span>
+          <div class="feature-title">Insightful Analytics</div>
+          <div class="feature-desc">Get weekly productivity reports and actionable insights to help you improve your
+            workflow.</div>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔔</span>
+          <div class="feature-title">Smart Notifications</div>
+          <div class="feature-desc">Receive real-time, context-aware alerts and reminders so you never miss an important
+            deadline or meeting.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="testimonials-title">What Our Users Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Alex Morgan</div>
+          <div class="testimonial-role">Product Manager</div>
+          <div class="testimonial-quote">“SwiftSync keeps my week organized across devices, and the AI reminders are a
+            lifesaver!”</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Priya Singh</div>
+          <div class="testimonial-role">Freelance Designer</div>
+          <div class="testimonial-quote">“I love the customizable dashboard and collaboration features. My workflow is
+            smoother than ever.”</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Daniel avatar" class="testimonial-avatar" />
+          <div class="testimonial-name">Daniel Kim</div>
+          <div class="testimonial-role">Startup Founder</div>
+          <div class="testimonial-quote">“SwiftSync’s real-time sync and secure cloud backup gives me peace of mind for
+            my team’s data.”</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <h2 class="pricing-title">Pricing</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-plan">Free</div>
+          <div class="pricing-price">$0<span style="font-size:1rem;font-weight:400;">/mo</span></div>
+          <ul class="pricing-features">
+            <li>✔ Basic sync across devices</li>
+            <li>✔ Calendar & tasks integration</li>
+            <li>✔ 1 workspace</li>
+          </ul>
+          <button class="pricing-cta">Choose Free</button>
+        </div>
+        <div class="pricing-card highlight">
+          <div class="pricing-plan">Pro</div>
+          <div class="pricing-price">$8<span style="font-size:1rem;font-weight:400;">/mo</span></div>
+          <ul class="pricing-features">
+            <li>✔ Everything in Free</li>
+            <li>✔ AI smart suggestions</li>
+            <li>✔ Unlimited workspaces</li>
+            <li>✔ Advanced integrations</li>
+          </ul>
+          <button class="pricing-cta">Choose Pro</button>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-plan">Team</div>
+          <div class="pricing-price">$16<span style="font-size:1rem;font-weight:400;">/mo</span></div>
+          <ul class="pricing-features">
+            <li>✔ Everything in Pro</li>
+            <li>✔ Real-time collaboration</li>
+            <li>✔ Admin controls</li>
+            <li>✔ Priority support</li>
+          </ul>
+          <button class="pricing-cta">Choose Team</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+      <div class="cta-headline">Ready to supercharge your productivity?</div>
+      <button class="cta-btn">Sign Up Now</button>
+    </section>
+  </main>
+  <footer>
+    <div>© 2025 SwiftSync. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.389 4.482A13.978 13.978 0 013.1 3.17a4.92 4.92 0 001.523 6.574A4.904 4.904 0 01.964 9.11v.062a4.92 4.92 0 003.946 4.827 4.996 4.996 0 01-2.224.084 4.93 4.93 0 004.6 3.417A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.209c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0024 4.557z" />
+        </svg></a>
+      <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75c.967 0 1.75.783 1.75 1.75s-.783 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.062-1.867-3.062-1.868 0-2.156 1.459-2.156 2.968v5.698h-3v-10h2.884v1.366h.041c.402-.76 1.386-1.562 2.854-1.562 3.052 0 3.616 2.009 3.616 4.623v5.573z" />
+        </svg></a>
+      <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M22.676 0h-21.352c-.73 0-1.324.593-1.324 1.324v21.352c0 .73.593 1.324 1.324 1.324h11.495v-9.294h-3.125v-3.622h3.125v-2.672c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12v9.294h6.116c.73 0 1.324-.593 1.324-1.324v-21.352c0-.731-.594-1.324-1.324-1.324z" />
+        </svg></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

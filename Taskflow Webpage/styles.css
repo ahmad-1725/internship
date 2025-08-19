@@ -1,0 +1,335 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f8f9fa url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png') repeat;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4a90e2, #6a5acd);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    user-select: none;
+}
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+header p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0e7ff; /* lighter for contrast */
+}
+header button {
+    padding: 14px 36px;
+    border: none;
+    background: white;
+    color: #007aff;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    animation: pulse 2.5s infinite;
+    box-shadow: 0 4px 10px rgba(0,122,255,0.3);
+}
+header button:hover,
+header button:focus-visible {
+    background: #e2e2e2;
+    outline: none;
+    box-shadow: 0 6px 14px rgba(0,122,255,0.5);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Section Base */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.25rem;
+    color: #007aff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+.hero-content {
+    flex: 1 1 450px;
+    min-width: 280px;
+}
+.hero-content h2 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+    color: #007aff;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #444;
+    max-width: 500px;
+}
+.hero-content button {
+    padding: 14px 40px;
+    border: none;
+    background: #007aff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,122,255,0.4);
+}
+.hero-content button:hover,
+.hero-content button:focus-visible {
+    background: #005fcc;
+    outline: none;
+    box-shadow: 0 8px 25px rgba(0,95,204,0.6);
+}
+.hero-image {
+    flex: 1 1 450px;
+    text-align: center;
+    min-width: 280px;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.hero-image img:hover,
+.hero-image img:focus-visible {
+    transform: scale(1.02);
+    outline: none;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+.feature {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+.feature:hover,
+.feature:focus-within {
+    background-color: #007aff;
+    color: white;
+    transform: scale(1.07);
+}
+.feature i {
+    font-size: 3rem;
+    color: #007aff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+.feature:hover i,
+.feature:focus-within i {
+    color: white;
+}
+
+/* Reviews Section */
+.reviews-section {
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
+    padding: 70px 20px;
+    border-radius: 16px;
+}
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.review {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+.review:hover,
+.review:focus-within {
+    background-color: #007aff;
+    color: white;
+    transform: translateY(-8px);
+}
+.review strong {
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #007aff;
+    transition: color 0.3s ease;
+}
+.review:hover strong,
+.review:focus-within strong {
+    color: white;
+}
+
+/* Pricing */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.price-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+.price-card:hover,
+.price-card:focus-within {
+    background-color: #007aff;
+    color: white;
+    transform: translateY(-8px);
+}
+.price-card h3 {
+    margin-bottom: 14px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.price-card h2 {
+    color: #007aff;
+    margin-bottom: 22px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+.price-card:hover h2,
+.price-card:focus-within h2 {
+    color: white;
+}
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.price-card ul li {
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+.price-card button {
+    background: #3083db;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 14px rgba(48,131,219,0.5);
+}
+.price-card button:hover,
+.price-card button:focus-visible {
+    background: white;
+    color: #007aff;
+    outline: none;
+    box-shadow: 0 8px 20px rgba(0,122,255,0.7);
+}
+
+/* Footer */
+footer {
+    background: #2c2c2c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1rem;
+    user-select: none;
+}
+footer a {
+    color: white;
+    margin: 0 14px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+footer a:hover,
+footer a:focus-visible {
+    color: #007aff;
+    outline: none;
+}
+footer p {
+    margin: 10px 0 0;
+}
+
+/* Accessibility improvement for focus states */
+button:focus-visible,
+a:focus-visible,
+.feature:focus-within,
+.review:focus-within,
+.price-card:focus-within {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 50px 15px;
+    }
+    .hero-content,
+    .hero-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .hero-content button {
+        width: 100%;
+        padding: 14px 0;
+    }
+}
